@@ -30,8 +30,8 @@ With SCD Image Client you can:
 - request to server (download) a specific file, and download it
 - request to server to delete a file from server file system
 
-## How to compile and run Image Server
+## How to compile and run SCD Image Server
 
-## How to complie and run Img Client application utility
+## How to complie and run SCD Image Client application utility
 
-## How to embed Image Client Qt C++ Class into yuor own application
+## How to embed SCD Image Client Qt C++ Class into yuor own application
