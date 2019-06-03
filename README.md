@@ -18,3 +18,9 @@ Furthermore, the database and files may also reside on different units and / or 
 data distribution between traditional database (Mysql for example) and file system.
 Furthermore, embedding the SCDImgClient class into your application will be possible to communicate  with the image server for upload/download and file deletion, without having to worry about details
 of client implementation: easy, fast and reliable.
+
+## How to compile and run Image Server
+
+## How to complie and run Img Client application utility
+
+## How to embed Image Client Qt C++ Class into yuor own application
