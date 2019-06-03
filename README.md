@@ -19,7 +19,7 @@ data distribution between traditional database (Mysql for example) and file syst
 Furthermore, embedding the SCDImgClient class into your application will be possible to communicate  with the image server for upload/download and file deletion, without having to worry about details
 of client implementation: easy, fast and reliable.
 
-## What you can do with Image Server
+## What you can do with SCD Image Server
 
 SCD Image Server is  moreover distributed with a simple client application which demonstrate how to use SCD Image Client Class, and his functionalities.
 
