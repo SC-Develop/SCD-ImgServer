@@ -61,13 +61,13 @@ You can start server from cli:
 ~/bin$ ./scdimssrver
 ```
 You should see something like as:
+
 ```
 SC-Develop Image Server v1.0
 Copyright (c) 2019 (MIT) Ing. Salvatore Cerami - dev.salvatore.cerami@gmail.com
 https://github.com/sc-develop - git.sc.develop@gmail.com
 
 "Image Server is listening on port:12345 for incoming connections..."
-
 ```
 ## How to compile and run SCD Image Client application utility
 
