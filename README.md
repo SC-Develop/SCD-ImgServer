@@ -136,3 +136,52 @@ Destination path name <b>must</b> start with <b>'/'</b> and it is relative to th
 The path <b>/sicily/cl/</b> will be appended under the server root path specified into <b>config.cfg</b> file. 
 
 ## How to embed SCD Image Client Qt C++ Class into yuor own application
+
+You must include on you own Qt Project
+
+- scdimagclient.h
+- scdimgclient.cpp
+
+On you main function or into man window constructor:
+```
+#include "scdimgclient.h"
+
+void main(int argc, char *argv[])
+{
+   QCoreApplication a(argc, argv);
+      
+   .
+   .
+   .
+   
+   int Port     = 12345;
+   QString host = "localhost";
+   
+   SCDImgClient imgc(host,Port,10000); // declare the client obj
+
+   // connect your client desidered events...
+
+   imgc.connect(&imgc, &SCDImgClient::notifyConnected,  onConnect);
+   imgc.connect(&imgc, &SCDImgClient::notifyDisconnect, onDisconnect);
+   imgc.connect(&imgc, &SCDImgClient::notifyError,      onError);
+   imgc.connect(&imgc, &SCDImgClient::finished,         onFinished);
+   imgc.connect(&imgc, &SCDImgClient::fileReceived,     onFileReceived);
+   imgc.connect(&imgc, &SCDImgClient::fileSaving,       onFileSaving);
+   
+   imgc.start();
+   
+   .
+   .
+   .
+   a.exec();
+}
+```
+At this point you can implement the code of each slot connected...<br><br>
+
+What are you waiting for? Try it now! It's really simple and fast.<br>
+
+See the scdimgclient code for further explaination!<br>br>
+
+I wish you a good job.
+
+
