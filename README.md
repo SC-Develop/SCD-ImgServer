@@ -176,7 +176,7 @@ void main(int argc, char *argv[])
    a.exec();
 }
 ```
-At this point you can implement the code of each slot connected...<br><br>
+At this point you can implement the code of each slot connected...<br>
 
 What are you waiting for? Try it now! It's really simple and fast.<br>
 
