@@ -101,11 +101,8 @@ Usage scdimgclient <host> <port> <DEL> <remote file path to delete>
 ```
 ~/bin$ ./scdimgclient localhost 12345 PUT ./sicily/caltanissetta/1.png /sicily/cl/photo1.png
 ```
-Destination path name <b>must</b> start with '/', and destination filename must be specified.<br>
+Destination path name <b>must</b> start with <b>'/'</b>, and destination filename <b>must be</b> specified.<br>
 
 The path <b>/sicily/cl/</b> will be appended under the server root path specified into <b>config.cfg</b> file. 
-
-
-
 
 ## How to embed SCD Image Client Qt C++ Class into yuor own application
