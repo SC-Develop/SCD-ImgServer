@@ -96,7 +96,7 @@ Usage scdimgclient <host> <port> <DEL> <remote file path to delete>
 ```
 ## Example of five syntax usage.
 
-### Upload a photo
+### Syntax 1: Upload a photo
 
 ```
 ~/bin$ ./scdimgclient localhost 12345 PUT ./sicily/caltanissetta/1.png /sicily/cl/photo1.png
@@ -105,7 +105,7 @@ Destination path name <b>must</b> start with <b>'/'</b>, and destination filenam
 
 The path <b>/sicily/cl/</b> will be appended under the server root path specified into <b>config.cfg</b> file. 
 
-### Download a photo
+### Syntax 2: Download a photo
 
 ```
 ~/bin$ ./scdimgclient localhost 12345 GET /sicily/cl/photo1.png -file:./download/sicily/cl/
@@ -115,26 +115,24 @@ Destination filename <b>must not</b> be specified.<br>
 
 The path <b>./download/sicily/cl/</b> will be created on the client file system. 
 
-### Download a thumbnail
+### Syntax 3: Download a thumbnail
 
 ```
 ~/bin$ ./scdimgclient localhost 12345 GET /sicily/cl/photo1.png -file:./download/sicily/cl/ -T
 ```
-### Delete a remote file
+### Syntax 4: Delete a remote file
 
 ```
 ~/bin$ ./scdimgclient localhost 12345 DEL /sicily/cl/photo1.png
 ```
 Remote file path name <b>must</b> start with <b>'/'</b> and it is relative to the server root path specified into <b>config.cfg</b> file. <br>
 
-### Upload a photo folder
+### Syntax 5: Upload a photo folder
 
 ```
 ~/bin$ ./scdimgclient localhost 12345 PUT ./sicily/caltanissetta/ /sicily/cl/photo1.png
 ```
 Destination path name <b>must</b> start with <b>'/'</b> and it is relative to the server root path specified into <b>config.cfg</b> file. <br>
 The path <b>/sicily/cl/</b> will be appended under the server root path specified into <b>config.cfg</b> file. 
-
-
 
 ## How to embed SCD Image Client Qt C++ Class into yuor own application
