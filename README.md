@@ -38,6 +38,7 @@ With SCD Image Client you can:
 ### Build and Run the SCD Image Server
 
 Run QT Creator and load project found into server 'source' subdir, build project and run.<br>
+Executable <b>scdimgserver</b>will be generated under the <b>bin</b> folder
 At first execution <b>config.cfg</b> file wil be created.<br><br>
 To edit <b>config.cfg</b> you can type:
 
@@ -54,14 +55,30 @@ All images folder tree, will be created ubnde this root path.
 
 Now you can kill and restart server to realod new settings.
 
+You can start server from cli
+
+```
+~/bin$ ./scdimssrver
+```
+You should see somthing like as:
+```
+SC-Develop Image Server v1.0
+Copyright (c) 2019 (MIT) Ing. Salvatore Cerami - dev.salvatore.cerami@gmail.com
+https://github.com/sc-develop - git.sc.develop@gmail.com
+
+"Image Server is listening on port:12345 for incoming connections..."
+
+```
 ## How to compile and run SCD Image Client application utility
 
 ### Build and Run the SCD Image Client Applciation
 
 Run QT Creator, load project found into client 'source' subdir and build.
+Executable <b>scdimgclient</b>will be genereted under the <b>bin</b> folder
 
-There are four distinct syntax you can use to to to upload, download and delete file whit scdimgclient application.
+There are five distinct syntax you can use to upload, download and delete file with scdimgclient application.
 
-
+```
+$
 
 ## How to embed SCD Image Client Qt C++ Class into yuor own application
