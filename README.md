@@ -37,8 +37,8 @@ With SCD Image Client you can:
 
 ### Build and Run the SCD Image Server
 
-Run QT Creator and load project found into server 'source' subdir, build project and run.<br>
-Executable <b>scdimgserver</b>will be generated under the <b>bin</b> folder
+Run QT Creator and load project found into server 'source' subdir, build project and run.<br><br>
+Binary executable <b>scdimgserver</b> will be generated under the <b>bin</b> folder<br>
 At first execution <b>config.cfg</b> file wil be created.<br><br>
 To edit <b>config.cfg</b> you can type:
 
@@ -49,18 +49,18 @@ $nano cnfig.cfg
 port=12345
 rootpath=./
 ```
-Set server port, and image server root path, and save
+Set server port, and image server root path, and save.<br>
 
-All images folder tree, will be created ubnde this root path.
+All images folder tree, will be created ubnde this root path.<br>
 
-Now you can kill and restart server to realod new settings.
+Now you can kill and restart server to realod new settings.<br>
 
-You can start server from cli
+You can start server from cli:
 
 ```
 ~/bin$ ./scdimssrver
 ```
-You should see somthing like as:
+You should see something like as:
 ```
 SC-Develop Image Server v1.0
 Copyright (c) 2019 (MIT) Ing. Salvatore Cerami - dev.salvatore.cerami@gmail.com
@@ -73,12 +73,39 @@ https://github.com/sc-develop - git.sc.develop@gmail.com
 
 ### Build and Run the SCD Image Client Applciation
 
-Run QT Creator, load project found into client 'source' subdir and build.
-Executable <b>scdimgclient</b>will be genereted under the <b>bin</b> folder
+Run QT Creator, load project found into client 'source' subdir and build.<br>
+Binary executable <b>scdimgclient</b> will be genereted under the <b>bin</b> folder<br>
 
 There are five distinct syntax you can use to upload, download and delete file with scdimgclient application.
 
+Type
 ```
-$
+~/bin/ ./scdimgclient
+```
+You should see something like as: 
+
+```
+SC-Develop Image Client v1.0
+Copyright (c) 2019 (MIT) Ing. Salvatore Cerami - dev.salvatore.cerami@gmail.com
+https://github.com/sc-develop - git.sc.develop@gmail.com
+
+Usage scdimgclient <host> <port> <PUT> <file path to transfer> <dest file path>
+Usage scdimgclient <host> <port> <PUT> <folder path to transfer> <dest file path> -f 
+Usage scdimgclient <host> <port> <GET> <remote file path to get> [-file:<file path>] [-T]
+Usage scdimgclient <host> <port> <DEL> <remote file path to delete>
+```
+## Example of five syntax usage.
+
+### Upload a photo
+
+```
+~/bin$ ./scdimgclient localhost 12345 PUT ./sicily/caltanissetta/1.png /sicily/cl/photo1.png
+```
+Destination path name <b>must</> start with '/', and destination filename must be specified.<br>
+
+The path <b>/sicily/cl/</b> will be appended under the server root path specified into <b>config.cfg</b> file. 
+
+
+
 
 ## How to embed SCD Image Client Qt C++ Class into yuor own application
