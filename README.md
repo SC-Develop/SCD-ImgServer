@@ -168,7 +168,7 @@ void main(int argc, char *argv[])
    imgc.connect(&imgc, &SCDImgClient::fileReceived,     onFileReceived);
    imgc.connect(&imgc, &SCDImgClient::fileSaving,       onFileSaving);
    
-   imgc.start();
+   imgc.start(); // start a server
    
    .
    .
