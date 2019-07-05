@@ -37,20 +37,22 @@ With SCD Image Client you can:
 
 ### Build and Run
 
-Run QT Creator and load project found into 'source' subdir, build project and run.
-At first execution config.cfg file wil be created<br>.
-To edit config.cfg you can type
+Run QT Creator and load project found into 'source' subdir, build project and run.<br>
+At first execution <b>config.cfg</b> file wil be created.<br><br>
+To edit <b>config.cfg</b> you can type:
 
-$cd bin
+$cd bin<br>
 $nano cnfig.cfg
 ```
 [General]
 port=12345
 rootpath=./
 ```
-Set server port, and image server root path.
+Set server port, and image server root path, and save
 
 All images folder tree, will be created ubnde this root path.
+
+Now you can kill and restart server to realod new settings.
 
 ## How to complie and run SCD Image Client application utility
 
