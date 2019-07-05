@@ -171,7 +171,7 @@ void main(int argc, char *argv[])
    QString filePath = "./sicily/caltanissetta/1.jpg"; // path of file on the client file system
    QString destPath = "./sicily/caltanissetta/1.jpg"; // remote path relative to server rootpath
    
-   imgc.ret = imgc.sendFile(filePath,destPath);
+   imgc.ret = imgc.sendFile(filePath,destPath); // send a file to img server
    
    .
    .
