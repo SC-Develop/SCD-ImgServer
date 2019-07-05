@@ -31,9 +31,9 @@ With SCD Image Client you can:
 - request to server to delete a file from server file system
 
 ## How to compile and run SCD Image Server
-# download project
+### download project
 
-``` git clone https://github.com/sc-develop/scd-imgserver
+``` git clone https://github.com/sc-develop/scd-imgserver```
 
 Run QT Creator and load project found into 'source' subdir. 
 Build project and run.
