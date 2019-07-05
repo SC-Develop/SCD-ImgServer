@@ -20,13 +20,14 @@ Also, embedding the SCDImgClient class into your application will be possible to
 
 ## What you can do with SCD Image Server
 
-SCD Image Server is  moreover distributed with a simple client application which demonstrate how to use SCD Image Client Class, and his functionalities.
+SCD Image Server is  also distributed with a simple client application which demonstrate how to use SCD Image Client Class, and his functionalities.
 
 With SCD Image Client you can:
 
 - send (upload) a file to server specifiying where the server must save the received file.
 - send (upload) a files folder to server specifiying where the server must save the received files folder
 - request to server (download) a specific file, and download it
+- request to server (download) a specific file thumbnail, and download it
 - request to server to delete a file from server file system
 
 ## How to compile and run SCD Image Server
