@@ -31,14 +31,26 @@ With SCD Image Client you can:
 - request to server to delete a file from server file system
 
 ## How to compile and run SCD Image Server
-### download project
+### Download project
 
 ``` git clone https://github.com/sc-develop/scd-imgserver```
 
-Run QT Creator and load project found into 'source' subdir. 
-Build project and run.
-At first execution config.cfg file wil be created.
+### Build and Run
 
+Run QT Creator and load project found into 'source' subdir, build project and run.
+At first execution config.cfg file wil be created<br>.
+To edit config.cfg you can type
+
+$cd bin
+$nano cnfig.cfg
+```
+[General]
+port=12345
+rootpath=./
+```
+Set server port, and image server root path.
+
+All images folder tree, will be created ubnde this root path.
 
 ## How to complie and run SCD Image Client application utility
 
