@@ -54,6 +54,6 @@ All images folder tree, will be created ubnde this root path.
 
 Now you can kill and restart server to realod new settings.
 
-## How to complie and run SCD Image Client application utility
+## How to compile and run SCD Image Client application utility
 
 ## How to embed SCD Image Client Qt C++ Class into yuor own application
