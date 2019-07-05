@@ -180,7 +180,7 @@ At this point you can implement the code of each slot connected...<br><br>
 
 What are you waiting for? Try it now! It's really simple and fast.<br>
 
-See the scdimgclient code for further explaination!<br><br>
+See the scdimgclient code for further explaination!<br>
 
 I wish you a good job.
 
