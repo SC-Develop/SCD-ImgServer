@@ -173,6 +173,8 @@ void main(int argc, char *argv[])
    
    imgc.ret = imgc.sendFile(filePath,destPath); // send a file to img server
    
+   // on finished, the related invoked slots, report the information about the success or failure...
+   
    .
    .
    .
