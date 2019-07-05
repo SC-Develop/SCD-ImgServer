@@ -99,7 +99,7 @@ Usage scdimgclient <host> <port> <DEL> <remote file path to delete>
 ### Syntax 1: Upload a photo
 
 ```
-~/bin$ ./scdimgclient localhost 12345 PUT ./sicily/caltanissetta/1.png /sicily/cl/photo1.png
+~/bin$ ./scdimgclient localhost 12345 PUT ./media/sicily/caltanissetta/1.png /sicily/cl/photo1.png
 ```
 Destination path name <b>must</b> start with <b>'/'</b>, and destination filename <b>must be</b> specified.<br>
 
@@ -130,7 +130,7 @@ Remote file path name <b>must</b> start with <b>'/'</b> and it is relative to th
 ### Syntax 5: Upload a photo folder
 
 ```
-~/bin$ ./scdimgclient localhost 12345 PUT ./sicily/caltanissetta/ /sicily/cl/photo1.png
+~/bin$ ./scdimgclient localhost 12345 PUT ./media/sicily/caltanissetta/ /sicily/cl/photo1.png
 ```
 Destination path name <b>must</b> start with <b>'/'</b> and it is relative to the server root path specified into <b>config.cfg</b> file. <br>
 The path <b>/sicily/cl/</b> will be appended under the server root path specified into <b>config.cfg</b> file. 
@@ -168,10 +168,10 @@ void main(int argc, char *argv[])
    imgc.connect(&imgc, &SCDImgClient::fileReceived,     onFileReceived);
    imgc.connect(&imgc, &SCDImgClient::fileSaving,       onFileSaving);
    
-   QString filePath = "./sicily/caltanissetta/1.jpg"; // path of file on the client file system
-   QString destPath = "./sicily/caltanissetta/1.jpg"; // remote path relative to server rootpath
+   QString filePath = "./media/sicily/caltanissetta/1.jpg"; // path of file on the client file system
+   QString destPath = "./sicily/caltanissetta/1.jpg";       // remote path relative to server rootpath
    
-   imgc.ret = imgc.sendFile(filePath,destPath); // send a file to img server
+   imgc.ret = imgc.sendFile(filePath,destPath);             // send a file to img server
    
    // on finished, the related invoked slots, report the information about the success or failure...
    
