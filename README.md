@@ -168,7 +168,10 @@ void main(int argc, char *argv[])
    imgc.connect(&imgc, &SCDImgClient::fileReceived,     onFileReceived);
    imgc.connect(&imgc, &SCDImgClient::fileSaving,       onFileSaving);
    
-   imgc.start(); // start a server
+   QString filePath = "./sicily/caltanissetta/1.jpg"; // path of file on the client file system
+   QString destPath = "./sicily/caltanissetta/1.jpg"; // remote path relative to server rootpath
+   
+   imgc.ret = imgc.sendFile(filePath,destPath);
    
    .
    .
