@@ -43,7 +43,7 @@ At first execution <b>config.cfg</b> file wil be created.<br><br>
 To edit <b>config.cfg</b> you can type:
 
 $cd bin<br>
-$nano cnfig.cfg
+$nano config.cfg
 ```
 [General]
 port=12345
@@ -51,14 +51,14 @@ rootpath=./
 ```
 Set server port, and image server root path, and save.<br>
 
-All images folder tree, will be created ubnde this root path.<br>
+All images folder tree, will be created under this root path.<br>
 
 Now you can kill and restart server to realod new settings.<br>
 
 You can start server from cli:
 
 ```
-~/bin$ ./scdimssrver
+~/bin$ ./scdimgserver
 ```
 You should see something like as:
 
@@ -74,7 +74,7 @@ https://github.com/sc-develop - git.sc.develop@gmail.com
 ### Build and Run the SCD Image Client Applciation
 
 Run QT Creator, load project found into client 'source' subdir and build.<br>
-Binary executable <b>scdimgclient</b> will be genereted under the <b>bin</b> folder<br>
+Binary executable <b>scdimgclient</b> will be generated under the <b>bin</b> folder<br>
 
 There are five distinct syntax you can use to upload, download and delete file with scdimgclient application.
 
@@ -174,7 +174,7 @@ void main(int argc, char *argv[])
    QString destPath   = "/sicily/caltanissetta/";
    
    // uncomment one of below line to execute the related command: only one command can be executed at time
-   // each commend can be execture only if no command (connection) is currently running.
+   // each command can be execture only if no command (connection) is currently running.
    
    imgc.ret = imgc.sendFile(filePath,destPath);                    // send a file to img server (PUT => upload)
    
