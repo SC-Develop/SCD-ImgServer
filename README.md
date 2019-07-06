@@ -169,9 +169,22 @@ void main(int argc, char *argv[])
    imgc.connect(&imgc, &SCDImgClient::fileSaving,       onFileSaving);
    
    QString filePath = "./media/sicily/caltanissetta/1.jpg"; // path of file on the client file system
-   QString destPath = "./sicily/caltanissetta/1.jpg";       // remote path relative to server rootpath
+   QString destPath = "/sicily/caltanissetta/1.jpg";       // remote path relative to server rootpath
+   QString folderPath = "./sicily/caltanissetta/";
+   QString destPath   = "/sicily/caltanissetta/";
    
-   imgc.ret = imgc.sendFile(filePath,destPath);             // send a file to img server
+   // uncomment one of below line to execute the related command: only one command can be executed at time
+   // each commend can be execture only if no command (connection) is currently running.
+   
+   imgc.ret = imgc.sendFile(filePath,destPath);                    // send a file to img server (PUT => upload)
+   
+   // imgc.ret = imgc.sendFiles(folderPath, destFolderPath, true); // uncomment this to send a folder (PUT => upload)
+   
+   // imgc.ret = imgc.requestFile(destPath, filePath, false);      // GET a file (download)
+   
+   // imgc.ret = imgc.requestFile(destPath, filePath, true);      // GET a thumbnail (download)
+   
+   // imgc.ret = imgc.deleteFile(destPath); // delete a file on server
    
    // on finished, the related invoked slots, report the information about the success or failure...
    
