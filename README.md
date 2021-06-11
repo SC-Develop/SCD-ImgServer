@@ -71,7 +71,7 @@ https://github.com/sc-develop - git.sc.develop@gmail.com
 ```
 ## How to compile and run SCD Image Client application utility
 
-### Build and Run the SCD Image Client Applciation
+### Build and Run the SCD Image Client Application
 
 Run QT Creator, load project found into client 'source' subdir and build.<br>
 Binary executable <b>scdimgclient</b> will be generated under the <b>bin</b> folder<br>
